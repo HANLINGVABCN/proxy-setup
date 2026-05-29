@@ -2,6 +2,18 @@
 
 基于 `sing-box` 核心构建的轻量且功能强大的服务器代理一键部署脚本 (v3.0)。支持多协议、多出站模式、云防火墙穿透 (WARP / ZeroTrust) 及多系统架构。
 
+## 🚀 一键安装命令 (One-Click Setup)
+
+请在兼容的 Linux 服务器（需 `root` 权限）上直接运行以下命令：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/HANLINGVABCN/proxy-setup/main/proxy_setup.sh)
+```
+或者手动下载运行：
+```bash
+curl -O https://raw.githubusercontent.com/HANLINGVABCN/proxy-setup/main/proxy_setup.sh && chmod +x proxy_setup.sh && ./proxy_setup.sh
+```
+
 ## 🌟 核心特性 (Features)
 
 - **核心精简强悍**: 完全基于最新版 `sing-box`，极简配置，高性能，低内存占用。
@@ -24,24 +36,9 @@
 
 ---
 
-## 🚀 安装与使用 (Usage)
+## 菜单选项功能
 
-直接在兼容的 Linux 服务器（你需要拥有 root 权限）执行本脚本。
-
-```bash
-# 下载脚本
-curl -O https://raw.githubusercontent.com/YourUsername/YourRepo/main/proxy_setup.sh
-
-# 赋予执行权限
-chmod, +x proxy_setup.sh
-
-# 运行菜单
-sudo ./proxy_setup.sh
-```
-
-### 菜单选项功能
-
-执行后，按照中文图形化交互向导进行操作：
+执行脚本后，按照中文图形化交互向导进行操作：
 1. **全新安装 / 重置**: 从头配置机器类型、协议与出站模式。自动生成强随机密码和 UUID。
 2. **查看当前节点信息**: 获取并显示配置连接串 (支持 V2Ray / Clash / 扫码等节点格式导入)。
 3. **重启服务**: 便捷重启 `sing-box` 使配置生效。
