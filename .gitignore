@@ -1,0 +1,22 @@
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+临时/
+
+# IDE config
+.vscode/
+.idea/
+
+# Local proxy config out (if generated locally)
+*.json
+/tls/
